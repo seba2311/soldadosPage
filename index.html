@@ -1,11 +1,649 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soldados Puente Alto Inicio 1</title>
+    <meta name="description"
+        content="Soldados GYM Puente Alto - Kickboxing - Taekwondo - Jiu-Jitsu - Acondicionamiento físico">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <title>Soldados GYM Puente Alto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a class="logo" href="#inicio" aria-label="Soldados GYM Puente Alto inicio">
+                <img src="img/logo.jpg" alt="Soldados GYM Puente Alto Logo" class="logo__mark"
+                    style="height:2.2em; vertical-align:middle;">
+
+                <span class="logo__text">
+                    <strong>Puente Alto</strong>
+                    <small>Soldados GYM</small>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="#academia">Nosotros</a>
+                <a href="#programas">Programas</a>
+                <a href="#horarios">Horarios</a>
+                <a href="#instagram">Síguenos</a>
+                <a href="#contacto">Contacto</a>
+                <a class="btn btn--sm" href="#contacto">Primera clase</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero__grid" aria-hidden="true"></div>
+            <div class="container hero__content">
+                <p class="eyebrow">Soldados GYM · Puente Alto</p>
+                <h1>Vive la experiencia Soldados GYM</h1>
+                <p class="hero__lead">
+                    ¿Buscas un lugar donde puedas entrenar al máximonivel?
+                    <br> En Soldados te ofrecemos mucho más que un
+                    gimnasio. Contamos con:
+                    <br> Zona de pesas y máquinas para fortalecer tu
+                    cuerpo.<br>
+                    Acondicionamiento físico de alta calidad para
+                    mejorar tu resistencia.<br>
+                    Mas de 70 m2 de tatami para disciplinas como
+                    Brazilian Jiu-Jitsu, Taekwondo y Kickboxing.<br>
+                    Todo esto con profesionales capacitados que te
+                    guiarán para que alcances tus objetivos. <br>
+                <h5> <b>¡Tu crecimiento es nuestra prioridad!</b></h5>
+
+                </p>
+                <div class="hero__actions">
+                    <a class="btn" href="#contacto">Agenda tu primera clase</a>
+                    <a class="btn btn--ghost" href="#horarios">Ver horarios</a>
+                </div>
+                <ul class="hero__stats">
+                    <li><strong>Niños</strong><span>y adolescentes</span></li>
+                    <li><strong>Adultos</strong><span>todos los niveles</span></li>
+                </ul>
+                <!-- Carousel de imagenes -->
+                <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Imagen 1"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                            aria-label="Imagen 2"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                            aria-label="Imagen 3"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                            aria-label="Imagen 4"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+                            aria-label="Imagen 5"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"
+                            aria-label="Imagen 6"></button>
+                    </div>
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="img/img1.jpeg" class="d-block w-100" alt="Entrenamiento en grupo en tatami">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img2.jpeg" class="d-block w-100" alt="Clases para niños y adolescentes">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img3.jpeg" class="d-block w-100" alt="Competencia local de Jiu-Jitsu">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img4.jpeg" class="d-block w-100" alt="Competencia local de Jiu-Jitsu">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img5.jpeg" class="d-block w-100" alt="Competencia local de Jiu-Jitsu">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img6.jpeg" class="d-block w-100" alt="Competencia local de Jiu-Jitsu">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- INSERT_YOUR_CODE -->
+        <a href="https://wa.me/56976670865?text=Hola%2C%20quiero%20obtener%20más%20información" class="whatsapp-float"
+            target="_blank" rel="noopener" aria-label="Contáctanos por WhatsApp" title="Contáctanos por WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="visually-hidden">WhatsApp</span>
+        </a>
+
+        <section class="section" id="academia">
+            <div class="container split">
+                <div>
+                    <p class="eyebrow">Nuestras instalaciones</p>
+                    <h2>Un espacio para ti</h2>
+                    <p>
+                        En Soldados GYM entrenamos con un objetivo claro: construir fuerza, disciplina y constancia.
+                        Cada entrenamiento es una oportunidad para superar tus propios límites, mejorar tu condición
+                        física y desarrollar una mentalidad más fuerte.
+
+                        Ya sea que busques ganar fuerza y masa muscular, mejorar tu rendimiento, cambiar tu condición
+                        física o simplemente encontrar un lugar donde entrenar con propósito, en Soldados GYM
+                        encontrarás el espacio y la motivación para avanzar. Aquí no se trata de ser mejor que los
+                        demás, sino de ser mejor que ayer.
+
+                    </p>
+                </div>
+                <aside class="panel">
+                    <h3>Qué vas a encontrar</h3>
+                    <dl class="facts">
+                        <div>
+                            <dt>Arte</dt>
+                            <dd>Kickboxing - Taekwondo - Jiu-Jitsu - Acondicionamiento físico</dd>
+                        </div>
+                        <div>
+                            <dt>Público</dt>
+                            <dd>Niños, adolescentes y adultos</dd>
+                        </div>
+                        <div>
+                            <dt>Nivel</dt>
+                            <dd>Desde cero hasta competencia</dd>
+                        </div>
+                        <div>
+                            <dt>Comuna</dt>
+                            <dd>Puente Alto, Región Metropolitana</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="programas">
+            <div class="container">
+                <header class="section__head">
+                    <p class="eyebrow">Programas</p>
+                    <h2>Un espacio para ti</h2>
+                    <p>Elige el programa que se ajusta a tu edad y objetivo. Todos parten desde la técnica base.</p>
+                </header>
+                <div class="cards">
+                    <article class="card">
+                        <span class="card__tag">Kickboxing</span>
+                        <h3>Kickboxing</h3>
+                        <p style="color: white;">Kickboxing es una disciplina que combina boxeo y
+                            artes marciales como karate, taekwondo y jiu-jitsu. Ideal para quienes buscan mejorar
+                            su condición física, fortalecer su corazón y desarrollar habilidades de autodefensa.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__tag">Taekwondo</span>
+                        <h3>Taekwondo</h3>
+                        <p style="color: white;">Taekwondo es una disciplina que combina el kung fu y el karate.
+                            Ideal para quienes buscan mejorar su condición física, fortalecer su corazón y desarrollar
+                            habilidades de autodefensa.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__tag">Jiu-Jitsu brasileño</span>
+                        <h3>Jiu-Jitsu brasileño</h3>
+                        <p style="color: white;">Jiu-Jitsu brasileño es una disciplina
+                            Ideal para quienes buscan mejorar su condición física, fortalecer su corazón y desarrollar
+                            habilidades de autodefensa.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__tag">Acondicionamiento físico</span>
+                        <h3>Acondicionamiento físico</h3>
+                        <p style="color: white;">Acondicionamiento físico es una disciplina que combina el fitness y el
+                            yoga.
+                            Ideal para quienes buscan mejorar su condición física, fortalecer su corazón y desarrollar
+                            habilidades de autodefensa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="horarios">
+            <div class="container">
+                <header class="section__head">
+                    <p class="eyebrow">Horarios</p>
+                    <h2>Planifica tu semana</h2>
+                    <p>Horario referencial. Confirma el grupo y el horario vigente por WhatsApp antes de tu primera
+                        clase.</p>
+                </header>
+
+
+
+                <div class="schedule-table-wrap" style="overflow-x:auto;">
+                    <table class="schedule-table" style="width:100%; border-collapse:collapse; margin:auto;">
+                        <thead>
+                            <tr>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Grupo</th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Lunes</th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Martes</th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Miércoles
+                                </th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Jueves</th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Viernes
+                                </th>
+                                <th style="padding:8px 12px; border-bottom:2px solid #ccc; text-align:left;">Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:8px 12px;">Kids (6-11 años)</td>
+                                <td style="padding:8px 12px;">18:00 - 19:00</td>
+                                <td style="padding:8px 12px;">—</td>
+                                <td style="padding:8px 12px;">18:00 - 19:00</td>
+                                <td style="padding:8px 12px;">—</td>
+                                <td style="padding:8px 12px;">18:00 - 19:00 (Recuperativa)</td>
+                                <td style="padding:8px 12px;">—</td>
+                            </tr>
+                            <!-- <tr>
+                              <td style="padding:8px 12px;">Teens (12-16 años)</td>
+                              <td style="padding:8px 12px;">17:00 - 18:00</td>
+                              <td style="padding:8px 12px;">—</td>
+                              <td style="padding:8px 12px;">17:00 - 18:00</td>
+                              <td style="padding:8px 12px;">—</td>
+                              <td style="padding:8px 12px;">17:00 - 18:00</td>
+                              <td style="padding:8px 12px;">11:00 - 12:00</td>
+                            </tr> -->
+                            <tr>
+                                <td style="padding:8px 12px;">Adultos - Fundamentos (Gi)</td>
+                                <td style="padding:8px 12px;">19:00 - 20:00</td>
+                                <td style="padding:8px 12px;">21:30 - 22:30</td>
+                                <td style="padding:8px 12px;">19:00 - 20:00</td>
+                                <td style="padding:8px 12px;">21:30 - 22:30</td>
+                                <td style="padding:8px 12px;">19:00 - 20:00</td>
+                                <td style="padding:8px 12px;">11:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 12px;">Adultos (No-Gi)</td>
+                                <td style="padding:8px 12px;">21:30 - 22:30</td>
+                                <td style="padding:8px 12px;">19:00 - 20:00</td>
+                                <td style="padding:8px 12px;">21:30 - 22:30</td>
+                                <td style="padding:8px 12px;">19:00 - 20:00</td>
+                                <td style="padding:8px 12px;">—</td>
+                                <td style="padding:8px 12px;">12:00 - 13:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size:.9em; color:#666; margin-top:10px;">* Horario referencial, confirma por WhatsApp
+                        antes de asistir.</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="section" id="planes">
+            <div class="container">
+                <h2 class="mb-4 text-center">Nuestros Planes</h2>
+                <div class="row justify-content-center g-4">
+                    <!-- Plan 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm text-center" style="border-radius:1rem;">
+                            <div class="card-body d-flex flex-column" style="color: var(--verde-militar);">
+                                <h4 class="card-title mb-2">Plan Kickboxing - Boxeo</h4>
+                                <p class="mb-3">
+                                    <strong>5 clases por semana</strong><br>
+                                    Clases grupales dirigidas<br>
+                                    Lunes, Miércoles y Viernes a las 21:00 <br>
+                                    Martes y Jueves a las 20:00
+                                </p>
+                                <div class="mt-auto mb-3">
+                                    <span class="fw-bold display-6 d-block" style="color:var(--verde);">$40.000</span>
+                                    <small class="text-muted" style="color: var(--verde-militar);">/mes</small>
+                                </div>
+                                <a href="https://wa.me/56976670865?text=Hola%2C%20quiero%20obtener%20más%20información%20sobre%20el%20plan%20Kickboxing%20-%20Boxeo"
+                                    class="btn btn w-100">Inscribirme</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm text-center" style="border-radius:1rem;">
+                            <div class="card-body d-flex flex-column" style="color: var(--verde-militar);">
+                                <h4 class="card-title mb-2">Plan Fitness</h4>
+                                <p class="mb-3">
+                                    <strong>Clases dirigidas</strong><br>
+                                    3 veces por semana acondicionamiento físico<br>
+                                    2 veces por semana Aerobox y steep <br>
+                                    Sala dee pesas libre de lunes a viernes
+                                </p>
+                                <div class="mt-auto mb-3">
+                                    <span class="fw-bold display-6 d-block"
+                                        style="color:var(--verde-militar);">$46.000</span>
+                                    <small class="text-muted">/mes</small>
+                                </div>
+                                <a href="https://wa.me/56976670865?text=Hola%2C%20quiero%20obtener%20más%20información%20sobre%20el%20plan%20Fitness"
+                                    class="btn btn w-100">Inscribirme</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm text-center" style="border-radius:1rem;">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title mb-2">Plan VIP</h4>
+                                <p class="mb-3">
+                                    <strong>Acceeso a todas las clases:</strong><br>
+                                    Kickboxing - Boxeo. <br>
+                                    Acondicionamiento físico (AM - PM)<br>
+                                    Aerobox y Steep <br>
+                                    Sala de pesas libre
+                                </p>
+                                <div class="mt-auto mb-3">
+                                    <span class="fw-bold display-6 d-block"
+                                        style="color:var(--amarillo);">$65.000</span>
+                                    <small class="text-muted">/mes</small>
+                                </div>
+                                <a href="https://wa.me/56976670865?text=Hola%2C%20quiero%20obtener%20más%20información%20sobre%20el%20plan%20VIP"
+                                    class="btn btn w-100">Inscribirme</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-4" style="color:#888; font-size:.95em;">* Pregunta por descuentos familiares o
+                    grupos.</p>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container cta-band__inner">
+                <div>
+                    <p class="eyebrow">Primera clase</p>
+                    <h2>Ven a probar el tatami</h2>
+                    <p>Trae ropa cómoda. Te explicamos cómo funciona la clase y entrenas con supervisión. Sin
+                        compromiso.</p>
+                </div>
+                <a class="btn" href="#contacto">Quiero entrenar</a>
+            </div>
+        </section>
+
+        <!-- =========================
+     INSTAGRAM
+========================= -->
+        <section id="instagram" class="instagram-section py-5">
+
+            <div class="container">
+
+                <!-- TÍTULO -->
+                <div class="text-center mb-5">
+
+                    <span class="section-subtitle">
+                        NUESTRAS REDES SOCIALES
+                    </span>
+
+                    <h2 class="section-title mt-2" style="color: #666;">
+                        Síguenos en Instagram
+                    </h2>
+
+                    <p class="instagram-description">
+                        Conoce nuestras clases, entrenamientos, competencias y actividades
+                        de la academia.
+                    </p>
+
+                </div>
+
+
+                <!-- FEED INSTAGRAM -->
+                <div class="row g-4 instagram-feed">
+
+
+                    <!-- PUBLICACIÓN 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+
+                        <a href="https://www.instagram.com/soldados.cde/reel/DR7_llCgQ4R/" target="_blank"
+                            rel="noopener" class="instagram-card">
+
+                            <img src="img/instagram1.png" alt="Publicación de Soldados GYM Puente Alto"
+                                class="img-fluid">
+
+                            <div class="instagram-overlay">
+
+                                <i class="bi bi-instagram"></i>
+
+                                <span>Ver publicación</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- PUBLICACIÓN 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+
+                        <a href="https://www.instagram.com/soldados.cde/reel/DduyvonEwBp/" target="_blank"
+                            rel="noopener" class="instagram-card">
+
+                            <img src="img/instagram2.png" alt="Entrenamiento Soldados GYM Puente Alto"
+                                class="img-fluid">
+
+                            <div class="instagram-overlay">
+
+                                <i class="bi bi-instagram"></i>
+
+                                <span>Ver publicación</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- PUBLICACIÓN 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+
+                        <a href="https://www.instagram.com/soldados.cde/p/DRsJkW9AfAr/" target="_blank" rel="noopener"
+                            class="instagram-card">
+
+                            <img src="img/instagram3.png" alt="Soldados GYM Puente Alto" class="img-fluid">
+
+                            <div class="instagram-overlay">
+
+                                <i class="bi bi-instagram"></i>
+
+                                <span>Ver publicación</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- PUBLICACIÓN 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+
+                        <a href="https://www.instagram.com/soldados.cde/p/DRtHJh_DPN6/" target="_blank" rel="noopener"
+                            class="instagram-card">
+
+                            <img src="img/instagram4.png" alt="Soldados GYM Puente Alto" class="img-fluid">
+
+                            <div class="instagram-overlay">
+
+                                <i class="bi bi-instagram"></i>
+
+                                <span>Ver publicación</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÓN INSTAGRAM -->
+                <div class="text-center mt-5">
+
+                    <a href="https://www.instagram.com/soldados.cde/" target="_blank" rel="noopener"
+                        class="instagram-button">
+
+                        <i class="bi bi-instagram"></i>
+
+                        <span>Seguir a @soldados.cde</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <!-- Datos de contacto -->
+                    <div class="">
+                        <p class="eyebrow">Contacto</p>
+                        <h2>Estamos en Puente Alto</h2>
+                        <p>
+                            Escríbenos para confirmar horarios, valores y tu primera clase.
+                            Responderemos lo antes posible.
+                        </p>
+                        <ul class="contact-list list-unstyled mb-4">
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="fw-bold me-2">WhatsApp:</span>
+                                <a href="https://wa.me/56976670865" class="text-decoration-none">+56 9 76670865</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="fw-bold me-2">Correo:</span>
+                                <a href="mailto:contacto@SoldadosGYMPuenteAlto.cl"
+                                    class="text-decoration-none">contacto@SoldadosGYMPuenteAlto.cl</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="fw-bold me-2">Instagram:</span>
+                                <a href="https://www.instagram.com/soldados.cde/" rel="noopener noreferrer"
+                                    target="_blank" class="text-decoration-none">@soldados.cde</a>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fw-bold">Dirección:</span><br>
+                                <address class="mb-2">C. los Filtros 0176, Puente Alto, Región Metropolitana</address>
+                                <div class="ratio ratio-16x9" style="max-width:100%;">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.832038903111!2d-70.5271582!3d-33.609662199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d677fab125f3%3A0x246eb8d387e29aa9!2sC.%20los%20Filtros%200176%2C%20Puente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1788139050941!5m2!1ses!2scl"
+                                        style="border:0; width:100%; height:100%; min-height:200px;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Formulario de contacto -->
+                    <!--  <div class="col-12 col-lg-6">
+                        <form class="panel p-4 form shadow-sm" id="form-contacto" action="#" method="post" style="border-radius: 1rem;">
+                            <h3 class="mb-3">Escríbenos</h3>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required autocomplete="name" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono o WhatsApp</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" required autocomplete="tel" placeholder="+56 9 …">
+                            </div>
+                            <div class="mb-3">
+                                <label for="programa" class="form-label">Programa de interés</label>
+                                <select id="programa" name="programa" class="form-select">
+                                    <option value="kids">Kids</option>
+                                    <option value="teens">Adolescentes</option>
+                                    <option value="adultos" selected>Adultos</option>
+                                    <option value="competencia">Competencia</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Horario preferido, edad, experiencia…"></textarea>
+                            </div>
+                            <button class="btn btn-primary w-100" type="submit">Enviar consulta</button>
+                            <p class="form__note mt-2" id="form-nota" hidden>
+                                Gracias. Te contactaremos a la brevedad. Mientras tanto puedes escribirnos por WhatsApp.
+                            </p>
+                        </form>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <style>
+                @media (max-width: 991.98px) {
+                    #contacto .row {
+                        flex-direction: column;
+                    }
+
+                    #contacto .col-lg-6 {
+                        max-width: 100%;
+                        flex: 0 0 100%;
+                    }
+
+                    #contacto form.panel {
+                        margin-top: 2rem;
+                    }
+
+                    #contacto .ratio {
+                        min-height: 200px;
+                        height: auto;
+                    }
+                }
+
+                @media (max-width: 575.98px) {
+                    #contacto form.panel {
+                        padding: 1.25rem !important;
+                    }
+
+                    #contacto h2,
+                    #contacto h3 {
+                        font-size: 1.35rem;
+                    }
+                }
+            </style>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+
+            <p class="logo logo--footer">
+                <img src="img/logo.jpg" alt="Soldados GYM Puente Alto Logo" class="logo__mark"
+                    style="height:2.2em; vertical-align:middle;">
+                <span class="logo__text"><strong>Soldados GYM</strong><small>Kickboxing - Taekwondo - Jiu-Jitsu -
+                        Acondicionamiento físico</small></span>
+            </p>
+            <p>© <span id="year"></span> Soldados GYM Puente Alto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+
 </body>
+
+</html>
+</body>
+
 </html>
