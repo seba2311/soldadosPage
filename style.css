@@ -464,6 +464,49 @@ p { margin: 0 0 1rem; }
     text-transform: uppercase;
 }
 
+.planes-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: #000;
+}
+
+.plan-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.plan-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.plan-card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.plan-card .btn {
+    width: 100%;
+    margin-top: auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+
 .table-wrap {
     overflow-x: auto;
     border: 1px solid var(--color-border);
@@ -640,8 +683,19 @@ p { margin: 0 0 1rem; }
 }
 
 @media (max-width: 960px) {
-    .cards {
+    .cards,
+    .planes-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-card,
+    .plan-card:nth-child(4),
+    .plan-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .plan-card img {
+        aspect-ratio: 2 / 3;
     }
 
     .split,
@@ -684,8 +738,13 @@ p { margin: 0 0 1rem; }
     }
 
     .cards,
+    .planes-grid,
     .benefits {
         grid-template-columns: 1fr;
+    }
+
+    .plan-card img {
+        aspect-ratio: 3 / 4;
     }
 }
 
