@@ -173,7 +173,7 @@ p { margin: 0 0 1rem; }
     place-items: center;
     width: 42px;
     height: 42px;
-    background: var(--color-red);
+    /* background: var(--color-red); */
     color: var(--color-white);
     font-family: var(--font-display);
     font-weight: 800;
